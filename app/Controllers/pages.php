@@ -11,9 +11,11 @@ class Pages extends BaseController
             'title' => 'Home | Muamar'
         ];
         // return view('pages/home');
-        echo view('layout/header', $data);
-        echo view('pages/home');
-        echo view('layout/footer');
+        // echo view('layout/header', $data);
+        // echo view('pages/home');
+        // echo view('layout/footer');
+
+        return view('pages/home', $data); //setelah di rapikan (template.php)
     }
 
 
@@ -23,9 +25,10 @@ class Pages extends BaseController
         $data = [
             'title' => 'About Me'
         ];
-        // return view('pages/about');
-        echo view('layout/header', $data);
-        echo view('pages/about');
-        echo view('layout/footer');
+        // // return view('pages/about');
+        // echo view('layout/header', $data);
+        // echo view('pages/about');
+        // echo view('layout/footer');
+        return view('pages/about', $data);
     }
 }
