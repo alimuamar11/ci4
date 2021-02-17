@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>About Me</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, quo nam! Quam officiis aperiam, a minus repellat facilis eveniet! In, praesentium eaque! Amet ad corporis, impedit commodi quas rerum possimus!</p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aboutme</title>
-</head>
-
-<body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, obcaecati odio omnis rem necessitatibus eveniet eum eius modi adipisci alias quo debitis in ducimus id, ipsam commodi quos repellendus excepturi.</p>
-</body>
-
-</html>
+        </div>
+    </div>
+</div>
