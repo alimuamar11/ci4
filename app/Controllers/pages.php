@@ -31,4 +31,24 @@ class Pages extends BaseController
         // echo view('layout/footer');
         return view('pages/about', $data);
     }
+
+    public function contact()
+    {
+        $data = [
+            'title' => 'Contact',
+            'alamat' => [
+                [
+                    'tipe' => 'rumah',
+                    'alamat' => 'jl ngawi',
+                    'kota' => 'ngawi'
+                ],
+                [
+                    'tipe' => 'kantor',
+                    'alamat' => 'jl batam',
+                    'kota' => 'batam kota'
+                ]
+            ]
+        ];
+        return view('pages/contact', $data);
+    }
 }
