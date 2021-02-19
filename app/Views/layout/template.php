@@ -9,6 +9,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
 
+
+    <!-- my css -->
+    <link rel="stylesheet" href="/css/style.css">
+
     <!-- var title dari controller pages -->
     <title><?= $title; ?></title>
 </head>
@@ -25,6 +29,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="/">Home</a>
                         <a class="nav-link" href="/pages/about">About</a>
+                        <a class="nav-link" href="/comics">Komik</a>
                         <a class="nav-link" href="/pages/contact">Contact</a>
                     </div>
                 </div>
