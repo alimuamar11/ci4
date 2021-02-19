@@ -5,3 +5,7 @@
 .table > tbody > tr > * {
   vertical-align: middle;
 }
+
+.detailSampul {
+  width: 130px;
+}

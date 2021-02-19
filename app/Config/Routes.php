@@ -33,6 +33,11 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
 $routes->get('/', 'Pages::index');
+
+$routes->get('/comics/(:segment)', 'Comics::detail/$1');
+//kalau misal ada user mengakses comics/apapun, lalu ambil segment, 
+//kemudian arahkah ke controller Comics methode detail dengan mengirimkan segment ke $1
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

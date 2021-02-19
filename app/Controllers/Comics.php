@@ -14,14 +14,29 @@ class Comics extends BaseController
     }
     public function index()
     {
-        $komik = $this->komikModel->findAll();
+        //$komik = $this->komikModel->findAll(); note1
 
         $data = [
             'title' => 'daftar komik',
-            'komik' => $komik
+            //'komik' => $komik note1
+            'komik' => $this->komikModel->getComics() //tidak perlu parameter karena findall
         ];
 
 
         return view('comics/index', $data);
+    }
+
+    public function detail($slug) //detail menerima paraameter slug
+    {
+        //$komik = $this->komikModel->where(['slug' => $slug])->first();
+        //supaya rapi ditaruh di komikModel
+        //kita ambil komikModel panggil methode where nya adalah slug=slug kemudian ambil data pertama
+
+
+        $data = [
+            'title' => 'Detail Komik',
+            'komik' => $this->komikModel->getComics($slug)
+        ];
+        return view('comics/detail', $data);
     }
 }
